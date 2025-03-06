@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Namratha V Patil - AI Researcher & Software Engineer</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: #2c3e50;
+      line-height: 1.6;
+    }
+    /* Hero Section */
+    .hero {
+      background: #f0f4f8;
+      padding: 8rem 2rem 4rem;
+      text-align: center;
+    }
+    .hero .profile-img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #3498db;
+      margin-bottom: 1.5rem;
+    }
+    /* Quick Stats */
+    .quick-stats .stat {
+      padding: 1rem;
+      background: #f8f9fa;
+      border-radius: 10px;
+      text-align: center;
+    }
+    /* Research Card */
+    .research-card {
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .research-card:hover {
+      transform: translateY(-5px);
+    }
+    .tag {
+      background: #3498db;
+      color: #fff;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+      font-size: 0.8rem;
+    }
+    /* Timeline */
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: #3498db;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2rem;
+      padding-left: 2rem;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 0;
+      width: 12px;
+      height: 12px;
+      background: #3498db;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">Namratha V Patil</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Publications">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <img src="profile.jpg" alt="Namratha Patil" class="profile-img">
+    <h1 class="display-4">AI Researcher &amp; Software Engineer</h1>
+    <p class="lead">Advancing healthcare through multimodal AI systems</p>
+    <div class="row quick-stats mt-4">
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="stat">
+          <h5>MS Computer Science</h5>
+          <p>University of Southern California</p>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="stat">
+          <h5>Core Research Competencies</h5>
+          <p>Multimodal AI • Explainable AI • Agentic LLMs • RAG</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="stat">
+          <h5>Location</h5>
+          <p>Los Angeles, CA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Research Highlights Section -->
+<section id="research" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Research Highlights</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="research-card h-100">
+          <h3>Agentic Multimodal RAG for Medical Imaging</h3>
+          <p>Integrating vision-language models with clinical knowledge for enhanced medical image interpretation.</p>
+          <div class="mt-3">
+            <span class="tag">PyTorch</span>
+            <span class="tag">CLIP</span>
+            <span class="tag">Agentic LLMs</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="research-card h-100">
+          <h3>Differential Approach in Deep Learning for Medical Imaging</h3>
+          <p>Leveraging convolutional neural networks and computer vision for accurate skin lesion classification.</p>
+          <div class="mt-3">
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Computer Vision</span>
+            <span class="tag">Neural Networks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Research Experience Section -->
+
+<section id="Publications" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Research Experience</h2>
+
+    <!-- 1. Agentic Multimodal Retrieval-Augmented Generation (AM-RAG) for Diabetic Retinopathy Diagnosis -->
+    <div class="mb-5">
+      <div class="bg-light p-4 rounded">
+        <h5 class="mb-1">
+          Agentic Multimodal Retrieval-Augmented Generation (AM-RAG) for Diabetic Retinopathy Diagnosis
+        </h5>
+        <p class="mb-1">
+          <strong>University of Southern California</strong> | Los Angeles, USA | Dec 2024 – Present
+        </p>
+        <!-- Collapsible Abstract -->
+        <button class="btn btn-link p-0" type="button" data-bs-toggle="collapse" data-bs-target="#abstractAMRAG" aria-expanded="false" aria-controls="abstractAMRAG">
+          View Abstract
+        </button>
+        <div class="collapse" id="abstractAMRAG">
+          <div class="mt-3">
+            <p><em>Abstract:</em> Diabetic retinopathy (DR) remains a leading cause of blindness, necessitating early detection and continuous monitoring to prevent irreversible vision loss. However, existing AI models for DR lack interpretability and fail to incorporate dynamic patient data beyond static retinal images. We propose Agentic Multimodal Retrieval-Augmented Generation (AM-RAG), an AI-driven framework that integrates retinal imaging, electronic health records (EHRs), and lab trends with clinician-in-the-loop workflows. AM-RAG aligns imaging biomarkers (e.g., microaneurysms, exudates) with clinical risk factors (e.g., HbA1c, hypertension) using multimodal fusion for dynamic risk stratification. A retrieval engine enhances explainability by grounding predictions in similar historical cases, while agentic AI workflows prompt clinicians for missing data, improving decision support. Evaluated on a diverse dataset, AM-RAG provides a holistic view of DR progression, offering interpretable insights (e.g., “Progression aligns with patients with HbA1c greater than 9%”). This approach advances multimodal, explainable AI for chronic disease management, providing a scalable, clinician-integrated solution for digital healthcare systems and personalized DR monitoring.</p>
+            <p><strong>Keywords:</strong> Diabetic retinopathy, Multimodal AI, Explainable AI, RFMiD</p>
+          </div>
+        </div>
+        <!-- PDF Download Button -->
+        <div class="mt-3">
+          <a
+            href="RAG_DIABETIC (2).pdf"
+            class="btn btn-sm btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Agentic Multimodal Retrieval-Augmented Generation for Interactive Medical Image Analysis -->
+    <div class="mb-5">
+      <div class="bg-light p-4 rounded">
+        <h5 class="mb-1">
+          Agentic Multimodal Retrieval-Augmented Generation for Interactive Medical Image Analysis
+        </h5>
+        <p class="mb-1">
+          <strong>University of Southern California</strong> | Los Angeles, USA | Dec 2024 – Present
+        </p>
+        <ul class="mb-0">
+          <li>Designed an agentic multimodal Retrieval-Augmented Generation (RAG) framework combining deep learning architectures with clinical knowledge integration for interactive medical image analysis.</li>
+          <li>Employed a deep learning model for visual feature extraction, Differential Analyzer Approach (DAA-Deep) for selecting clinically significant features, and CLIP embeddings for aligning visual and textual data.</li>
+          <li>Validated the system on the HAM10000 dataset for skin lesion analysis, achieving state-of-the-art performance in diagnostic accuracy and explainability.</li>
+        </ul>
+        <!-- Collapsible Abstract -->
+        <button class="btn btn-link p-0 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#abstractRAGInteractive" aria-expanded="false" aria-controls="abstractRAGInteractive">
+          View Abstract
+        </button>
+        <div class="collapse" id="abstractRAGInteractive">
+          <div class="mt-3">
+            <p><em>Abstract:</em> Artificial Intelligence-driven medical image analysis has transformed healthcare by facilitating automated disease diagnosis and detection through advanced medical imaging technologies. This paper presents an agentic multimodal Retrieval-Augmented Generation (RAG) framework for interactive medical image analysis, combining deep learning architectures with clinical knowledge integration. The system employs a deep learning model for visual feature extraction, a Differential Analyzer Approach (DAA-Deep) for selecting clinically significant features, and Contrastive Language-Image Pre-training (CLIP) embeddings for aligning visual and textual data. The RAG framework retrieves relevant medical knowledge from a structured database and generates detailed diagnostic reports, while supporting interactive follow-up dialogue for enhanced clinical decision-making. Validated on the HAM10000 dataset for skin lesion analysis, the system demonstrates state-of-the-art performance in diagnostic accuracy and explainability. Its modular design, integrating DAA-Deep for feature selection, CLIP for multimodal alignment, and RAG for knowledge retrieval, ensures adaptability to diverse medical imaging domains. This work showcases the potential of agentic, multimodal systems to revolutionize medical image analysis and improve healthcare outcomes.</p>
+            <p><strong>Keywords:</strong> RAG, DAA-Deep, CLIP, HAM10000, Multimodal Learning</p>
+          </div>
+        </div>
+        <!-- PDF Download Button -->
+        <div class="mt-3">
+          <a
+            href="RAG_SKIN_CANCER_DETECTION (4).pdf"
+            class="btn btn-sm btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Deep Learning and the Differential Analyzer Approach for Skin Cancer Detection -->
+    <div class="mb-5">
+      <div class="bg-light p-4 rounded">
+        <h5 class="mb-1">
+          Deep Learning and the Differential Analyzer Approach for Skin Cancer Detection
+        </h5>
+        <p class="mb-1">
+          <strong>JSS Science and Technology University, Mysuru</strong> | Mysore, India | Jan 2023 – May 2023
+        </p>
+        <ul class="mb-0">
+          <li>Developed a CNN-based application for mole classification, enhancing early-stage skin cancer detection accuracy.</li>
+          <li>Integrated DAA-Deep to introduce confidence levels and threshold-based checks, ensuring more reliable and interpretable decision-making.</li>
+        </ul>
+        <!-- Collapsible Abstract -->
+        <button class="btn btn-link p-0 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#abstractDAADeep" aria-expanded="false" aria-controls="abstractDAADeep">
+          View Abstract
+        </button>
+        <div class="collapse" id="abstractDAADeep">
+          <div class="mt-3">
+            <p><em>Abstract:</em> Skin cancer is a globally prevalent and potentially life-threatening disease that underscores the importance of early detection and treatment. Traditional diagnostic methods rely heavily on visual inspections conducted by dermatologists, which can be prone to human error and constrained by resource limitations. Recent advancements in machine learning and deep learning techniques have offered promising prospects for automating the skin cancer detection process. However, this domain still faces persistent challenges, particularly the need for effective feature selection methods to improve model performance, interpretability, and computational efficiency. Our goal in this work is to substantially elevate the precision and efficiency of skin cancer detection. This research proposes a novel fusion of the Differential Analyzer Approach (DAA) with deep learning models to enhance skin cancer detection. Our work encompasses the ISIC 2018 dataset of skin cancer images, intricate convolutional neural network (CNN) architectures, and a seamlessly integrated DAA mechanism. The proposed DAA-Deep learning model significantly outperforms conventional deep learning models, showcasing higher accuracy and improved diagnostic capabilities. The results attained by the DAA-Deep model surpass the performance of numerous existing models, exhibiting a remarkable accuracy rate of 96% along with an impressive AUC (Area Under the ROC Curve) value of 0.99.</p>
+            <p><strong>Index Terms:</strong> DAA-Deep, CNN, DAA, ResNet50, Skin cancer, Deep learning, feature extraction</p>
+          </div>
+        </div>
+        <!-- PDF Download Button -->
+        <div class="mt-3">
+          <a
+            href="daa_deep_skin_cancer.pdf"
+            class="btn btn-sm btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Integrated Health Application Development -->
+    <div class="mb-5">
+      <div class="bg-light p-4 rounded">
+        <h5 class="mb-1">Integrated Health Application Development</h5>
+        <p class="mb-1">
+          <strong>JSS Science and Technology University, Mysuru</strong> | Mysore, India | April 2022 – November 2022
+        </p>
+        <ul class="mb-0">
+          <li>Developed an integrated health application combining heart disease prediction using machine learning, skin cancer classification with deep learning, and real-time COVID-19 vaccine availability tracking.</li>
+          <li>Designed optimization algorithms for real-time data processing.</li>
+          <li>Collaborated with a team to implement functionalities using React Native, SVM, and CNN, enhancing accessibility to healthcare services.</li>
+        </ul>
+        <!-- Collapsible Abstract -->
+        <button class="btn btn-link p-0 mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#abstractIntegratedHealth" aria-expanded="false" aria-controls="abstractIntegratedHealth">
+          View Abstract
+        </button>
+        <div class="collapse" id="abstractIntegratedHealth">
+          <div class="mt-3">
+            <p><em>Abstract:</em> Integrated health apps are accessible to users at all times and places. Health apps have become a part of the movement towards mobile health programs in health care. Our proposed work is to develop an Integrated Health Application to create a convenient and easy-to-use application for users. Our application can replace the current system in addition to a couple of extra features. The scope primarily consists of three health features. It includes functionalities like Heart Disease Prediction using ML, Skin Cancer Classification using Deep Learning, and tracking and notifying about real-time COVID-19 vaccine availability.</p>
+          </div>
+        </div>
+        <!-- PDF Download Button -->
+        <div class="mt-3">
+          <a
+            href="IRJET-V9I733.pdf"
+            class="btn btn-sm btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download PDF
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Honors and Awards Section -->
+<!-- Honors and Awards Section -->
+
+
+<!-- Honors and Awards Section -->
+
+<!-- Additional CSS to remove the blue points (if they're from list style) -->
+<style>
+  .timeline-item::before {
+    display: none; /* Hides any icon or point before the item */
+  }
+  .timeline-item {
+    list-style-type: none; /* Removes bullet points or default list style */
+  }
+</style>
+
+<!-- Honors and Awards Section -->
+<section id="awards" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Honors and Awards</h2>
+
+    <!-- Award Item 1 -->
+    <div class="mb-4">
+      <div class="bg-light p-4 rounded">
+        <h5>Finalist | Chhalaang Microsoft Hackathon</h5>
+        <p><small>Competed at an all-India level hosted by MetaMorph and Microsoft for Startups | Year: 2023</small></p>
+        <ul class="list-unstyled">
+          <li>Advanced to the final stage after showcasing innovative solutions and collaboration skills.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Award Item 2 -->
+    <div class="mb-4">
+      <div class="bg-light p-4 rounded">
+        <h5>Pre-Finalist | Google’s Girl Hackathon 2022</h5>
+        <p><small>Advanced by showcasing strong problem-solving skills | Year: 2022</small></p>
+        <ul class="list-unstyled">
+          <li>Demonstrated strong problem-solving and coding skills, earning recognition among top participants.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Experience Sectio<!-- Experience Section -->
+<!-- Professional Experience Section -->
+<section id="experience" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Professional Experience</h2>
+
+    <!-- Experience Item 1 -->
+    <div class="mb-4">
+      <div class="bg-light p-4 rounded">
+        <h5>Unacademy - Backend Engineer</h5>
+        <p><small>Unacademy, Bengaluru, India | May 2024 - July 2024</small></p>
+        <ul class="list-unstyled">
+          <li>Developed backend services with Go, Node.js, and Python (Django) and integrated AWS SQS to ensure seamless service communication.</li>
+          <li>Spearheaded the addition of a loan payment feature in Python/Django, resulting in a 20% increase in user engagement.</li>
+          <li>Optimized API performance by refining Elasticsearch queries and reconfiguring DynamoDB storage, boosting data accuracy by 25% and reducing response times.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Experience Item 2 -->
+    <div class="mb-4">
+      <div class="bg-light p-4 rounded">
+        <h5>eSamudaay - Software Engineer</h5>
+        <p><small>eSamudaay, Bengaluru, India | November 2022 - May 2024</small></p>
+        <ul class="list-unstyled">
+          <li>Integrated Firebase push notifications, enhancing user engagement and retention through coordinated team efforts.</li>
+          <li>Partnered with the product team to design and implement a customer rating system that improved user satisfaction and streamlined delivery operations.</li>
+          <li>Developed a document upload feature and built an API for Excel uploads, reducing seller onboarding time by 40% and improving data accuracy.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Experience Item 3 -->
+    <div class="mb-4">
+      <div class="bg-light p-4 rounded">
+        <h5>Accolite Digital - Software Engineering Intern</h5>
+        <p><small>Accolite Digital, Bengaluru, India | April 2022 - November 2022</small></p>
+        <ul class="list-unstyled">
+          <li>Contributed to a commission calculation application.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4">Get in Touch</h2>
+    <div class="d-flex justify-content-center gap-4">
+      <a href="mailto:nvpatil@usc.edu" class="fs-4 text-primary"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/namrathavpatil" class="fs-4 text-primary"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/namratha-v-6105b21a3" class="fs-4 text-primary"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-3 bg-white text-center">
+  <div class="container">
+    <p class="mb-0">&copy; 2025 Namratha V Patil. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
